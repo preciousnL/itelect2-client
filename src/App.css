@@ -7,36 +7,59 @@
   box-sizing: border-box;
 }
 
-.task-form {
+.task-form,
+
+.login-form {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 16px 0;
 }
- 
-.task-form input {
+
+.task-form input,
+
+.login-form input {
   flex: 1;
   padding: 8px 10px;
   font: inherit;
 }
- 
+
 .task-list {
   list-style: none;
   padding: 0;
 }
- 
+
 .task-list li {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
   border-bottom: 1px solid var(--border);
 }
- 
+
 .status {
   color: var(--text);
   font-size: 15px;
 }
 
-.task-form button {
+.task-form button,
+
+.login-form button,
+
+.who button {
   padding: 8px 14px;
   font: inherit;
+}
+
+/* Session 14: the logged-in line, and every error message. */
+
+.who {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error {
+  width: 100%;
+  margin: 0;
+  color: #d03b2f;
 }
